@@ -5,9 +5,16 @@
     xmlns:local="using:Allmystery10"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d">
-
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+    mc:Ignorable="d"
+    Background="Black">
+    <Grid>
+        <WebView x:Name="WebViewControl"
+             HorizontalAlignment="Stretch"
+             VerticalAlignment="Stretch"
+             NavigationCompleted="Browser_NavigationCompleted" 
+             DefaultBackgroundColor="Black"
+             Margin="0,0,0,0"
+             LoadCompleted="WebViewControl_LoadCompleted" />
     </Grid>
+
 </Page>
